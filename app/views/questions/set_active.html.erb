@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Current Question:</strong>
+  <h4><%= @question.poke %></h4>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @question.is_active %>
+</p>
+
+<%
+=begin %> link_to 'Edit', edit_question_path(@question) %> |
+<%
+=end %>
+
+<div>
+<p class="text-info">Users now may answer the question displayed on their device.</p>
+</div>
+
+
+
+<%= link_to 'Close question and show graph', graphs_path, class: 'btn'  %>
+<%= link_to 'Questions Overview', questions_path, class: 'btn'  %>
+

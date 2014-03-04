@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<%= high_chart("chart2", @chart2) %>
+
+<p> Total Answers :  <%= @answer_count[:total] %> </p>
+
+<table class="table">
+	<tr>
+		<td> 'Yes' votes: <%= @answer_count[:t_answers] %> </td>
+		<td> 'No' votes : <%= @answer_count[:f_answers] %> </td>
+		<td> Abstentions: <%= @answer_count[:e_answers] %> </td>
+	</tr>
+	<tr>
+		<td> Valid votes :  <%= @total_valid %> </td>
+		<td> Simple majority :  <%= @einfaches_mehr %> </td>
+		<td> Absolute majority :  <%= @absolutes_mehr %> </td>
+	</tr>
+</table>
+
+
+
+<!--div id="chart2"></div-->
+
+<!--%= link_to 'Edit', edit_question_path(@question), :class => 'btn btn-mini'  %-->
+<%= link_to 'Questions Overview', questions_path,   :class => 'btn'  %>
+<p class="spacer-medium"/>
+
+<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
+  Show Remarks
+</button>
+
+<div id="demo" class="collapse">
+	<% @remarks.each do |remark| %>
+		<p><%= remark %></p>
+	<% end %>
+</div>
