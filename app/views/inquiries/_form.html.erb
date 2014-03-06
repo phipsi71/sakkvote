@@ -1,46 +1,25 @@
 <%= form_for(@inquiry) do |f| %>
-  <% if @inquiry.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@inquiry.errors.count, "error") %> prohibited this inquiry from being saved:</h2>
 
-      <ul>
-      <% @inquiry.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
 <h4><%= @question.poke %></h4>
 <!--h4>Frage <%= @question.id %>: <%= @question.poke %></h4-->
 <!--%= f.label :answer %-->
 
-<!--div class="form_row">
-    <label for="theme">Theme:</label>
-    <% [ 'plain', 'desert', 'green', 'corporate', 'funky' ].each do |theme| %>
-      <br><%= radio_button_tag 'theme', theme, @theme == theme %>
-      <%= theme.humanize %>
-    <% end %>
-</div-->
 
 
-<!--div id="selector" class="btn-group">
-    <button type="button" class="btn" name="answer" value="yes">Yes</button>
-    <button type="button" class="btn" name="answer" value="abstention">Abstent</button>
-    <button type="button" class="btn" name="answer" value="no">No</button>
-</div-->
+  <div class="btn-group btn-group-large" data-toggle="buttons-radio">
+    <!--%= f.radio_button :answer, "yes", id: "first", style: "display:none;" %-->
+    <input id="first" name="inquiry[answer]" style="display:none;" type="radio" value="yes" />
+    <label for="first" class="btn  btn-large">YES</label>
 
+    <!--%= f.radio_button :answer, "abstention", id: "second",  style: "display:none;" %-->
+    <input id="second" name="inquiry[answer]" style="display:none;" type="radio" value="abstention" />
+    <label for="second" class="btn  btn-large">Abs.</label>
 
-<div class="btn-group" data-toggle="buttons-radio">
-  <%= f.radio_button :answer, "yes", id: "first", style: "display:none;" %>
-  <label for="first" class="btn ">YES</label>
-
-  <%= f.radio_button :answer, "abstention", id: "second",  style: "display:none;" %>
-  <label for="second" class="btn ">Abstent.</label>
-
-  <%= f.radio_button :answer, "no", id: "third", style: "display:none;" %>
-  <label for="third" class="btn ">NO</label>
-</div>
+    <!--%= f.radio_button :answer, "no", id: "third", style: "display:none;" %-->
+    <input id="third" name="inquiry[answer]" style="display:none;" type="radio" value="no" />
+    <label for="third" class="btn  btn-large">NO</label>
+  </div>
 
 
 <br/><br/>
@@ -52,6 +31,14 @@
 
   <div class="actions">
     <%= f.submit 'Vote', class: 'btn btn-large' %>
+  </div>
+
+  <div id="error_invisible">
+    <% if @inquiry.errors.any? %>
+        <!--% @inquiry.errors.full_messages.each do |msg| %-->
+          <%= flash[:error] = 'Obacht!' %>
+        <!--% end %-->
+    <% end %>
   </div>
 
 

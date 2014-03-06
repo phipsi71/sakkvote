@@ -48,6 +48,7 @@ class GraphsController < ApplicationController
                                     }
                         }
       })
+      
       f.options[:yAxis][:allowDecimals] = false
 
 
@@ -55,7 +56,11 @@ class GraphsController < ApplicationController
 
 
 
-      f.plot_options({ series: { stacking: "normal"} })
+      f.plot_options(
+        { column: 
+          { stacking: "normal"}
+        }
+       )
 
 
       #@chart2 = LazyHighCharts::HighChart.new('column') do |f|
