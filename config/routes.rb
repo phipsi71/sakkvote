@@ -6,12 +6,13 @@ Sakkvote::Application.routes.draw do
   resources :graphs
 
   get "questions/:id/set_active", to: 'questions#set_active', as: 'activequestion'
+  # get "questions/:id/get_active", to: 'questions#get_active'
 
   resources :questions
 
   resources :inquiries
 
-  resources :voters
+  
 
   #get "answers/poke"
   #get "questions/index"

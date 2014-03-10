@@ -1,7 +1,9 @@
 class InquiriesController < ApplicationController
+
+
   before_action :set_inquiry, only: [:show, :edit, :update, :destroy]
   before_action :get_active_question
-  before_action :authenticate
+  # before_action :authenticate
   #rescue_from ActiveRecord::RecordNotFound, with: :no_record_error
 
 
@@ -14,16 +16,16 @@ class InquiriesController < ApplicationController
   # GET /inquiries/1
   # GET /inquiries/1.json
   def show
-
   end
 
   # GET /inquiries/new
   def new
-    if Inquiry.exists?(session[:current_user_id], @question.id)
+    if @question.nil?
+      redirect_to '/pages/show', alert: 'Please wait for the first question to be displayed'
+    elsif Inquiry.exists?(session[:current_user_id], @question.id)
       redirect_to '/pages/show', alert: 'Question already answered. Please wait for the next question to be displayed'
     end
-    redirect_to '/pages/show', alert: 'No active question' if @question.nil?
-    @inquiry  = Inquiry.new
+    @inquiry = Inquiry.new
   end
 
   # GET /inquiries/1/edit
@@ -34,9 +36,6 @@ class InquiriesController < ApplicationController
   # POST /inquiries.json
   def create
     @inquiry = Inquiry.new(inquiry_params)
-#    if @inquiry.answer = ''
-#      redirect_to inquiry_path(params[:id]), alert: 'Please choose Yes/No/Abstent.'
-#    end
 
     @inquiry.session_id = session[:current_user_id]
     @inquiry.question_id = @question.id

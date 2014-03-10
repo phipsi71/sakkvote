@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   before_action :set_question, only: [:show, :edit, :update, :destroy, :set_active]
-    before_action :authenticate
+  before_action :authenticate
 
 
   # GET /questions
@@ -20,22 +20,18 @@ class QuestionsController < ApplicationController
   end
 
   def set_active
-
     #@qa = Question.all
     #@qa.each do |x|   # setze alle auf false
     #    x.is_active = 'false' 
     #    x.save
     #end
-
-    
-
     Question.set_false  # alle Records auf 'false' setzen
-    
     set_question        # find current active question
     @question.is_active = 'true' # setzt nur current auf 'true'
     @question.save
-
+    @active_question_count = Question.nofAnswers(get_active)  
   end
+
 
   def get_active 
     @active_question = Question.active.first

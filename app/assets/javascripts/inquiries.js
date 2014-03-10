@@ -1,6 +1,5 @@
 
-
-// $('#selector button').click(function() {
-//	$(this).addClass('active').siblings().removeClass('active');
-// });
-
+// Diese Funktion geht! :
+//$(function() {
+//	alert("Hi, popuppen !")
+//});

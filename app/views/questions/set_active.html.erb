@@ -2,13 +2,9 @@
 
 <p>
   <strong>Current Question:</strong>
-  <h4><%= @question.poke %></h4>
+  <h4 data-id="<%= @question.id %>"><%= @question.poke %></h4>
 </p>
 
-<p>
-  <strong>Is active:</strong>
-  <%= @question.is_active %>
-</p>
 
 <%
 =begin %> link_to 'Edit', edit_question_path(@question) %> |
@@ -16,9 +12,10 @@
 =end %>
 
 <div>
-<p class="text-info">Users now may answer the question displayed on their device.</p>
+<p class="text-info">Users now may answer the question displayed.</p>
 </div>
 
+<p>Number of answers: <span id="nofa"><%= @active_question_count %></span></p>
 
 
 <%= link_to 'Close question and show graph', graphs_path, class: 'btn'  %>

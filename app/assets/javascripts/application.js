@@ -17,3 +17,16 @@
 
 //= require_tree .
 
+$(function() {
+	if ($('strong').html() == 'Current Question:') {
+		setTimeout(updateComments, 10000);
+	}
+});
+
+
+function updateComments() {
+	var question_id = $('h4').attr('data-id');
+	$.getScript('set_active.js?question_id=' + question_id);
+	setTimeout(updateComments, 5000);
+}
+

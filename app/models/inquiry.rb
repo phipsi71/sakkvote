@@ -28,6 +28,7 @@ class Inquiry < ActiveRecord::Base
 
 
 
+
 	# This defines a class method :
 	# def self.method_name
 	# end
