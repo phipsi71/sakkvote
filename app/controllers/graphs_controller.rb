@@ -12,6 +12,8 @@ class GraphsController < ApplicationController
     @einfaches_mehr = (@total_valid.to_f / 2 + 1).floor
     @absolutes_mehr = (@total_votes.to_f / 2 + 1).floor
 
+    # Question.set_false  # alle Records auf 'false' setzen und damit Votes mehr zulassen.
+
     @chart2 = LazyHighCharts::HighChart.new('column') do |f|
       f.title({:text=>"#{@active_question.poke}" })
 

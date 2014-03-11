@@ -18,15 +18,15 @@
 //= require_tree .
 
 $(function() {
-	if ($('strong').html() == 'Current Question:') {
-		setTimeout(updateComments, 10000);
+	if ($('.decent').length > 0 ) {
+		setTimeout(updateAnswers, 10000);
 	}
 });
 
 
-function updateComments() {
+function updateAnswers() {
 	var question_id = $('h4').attr('data-id');
 	$.getScript('set_active.js?question_id=' + question_id);
-	setTimeout(updateComments, 5000);
+	setTimeout(updateAnswers, 5000);
 }
 

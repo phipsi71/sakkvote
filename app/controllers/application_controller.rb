@@ -7,9 +7,9 @@ class ApplicationController < ActionController::Base
 
   protected
     def authenticate
-    #  authenticate_or_request_with_http_basic do |username, password|
-    #     username == USER_ID && password == PASSWORD
-    #  end
+      authenticate_or_request_with_http_basic do |username, password|
+         username == USER_ID && password == PASSWORD
+      end
     end
 
 

@@ -36,7 +36,7 @@
   <div id="error_invisible">
     <% if @inquiry.errors.any? %>
         <!--% @inquiry.errors.full_messages.each do |msg| %-->
-          <%= flash[:error] = 'Obacht!' %>
+          <%= flash[:error] = 'Please make a choice!' %>
         <!--% end %-->
     <% end %>
   </div>
