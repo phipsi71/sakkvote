@@ -13,7 +13,7 @@ class Inquiry < ActiveRecord::Base
 		t = Inquiry.where("answer = 'yes'").where("question_id = ?", active_question_id).count
 		f = Inquiry.where("answer = 'no'").where("question_id = ?", active_question_id).count
 		e = Inquiry.where("answer = 'abstention'").where("question_id = ?",  active_question_id).count
-		v = Inquiry.where("answer is not NULL").where("question_id = ?",  active_question_id).count
+		v = Inquiry.where("answer <> 'abstention'").where("question_id = ?",  active_question_id).count
 		{ total: tot, t_answers: t, f_answers: f, e_answers: e, v_answers: v, 
 			remarks: Inquiry.where("question_id = ?", active_question_id).collect {|r| r.remark} } # this is the return value : a hash ( including the remarks as array )
 	end

@@ -2,17 +2,19 @@
 
 <%= high_chart("chart2", @chart2) %>
 
-<p> Total Answers :  <%= @answer_count[:total] %> </p>
 
-<table class="table">
+<table class="table table-bordered">
 	<tr>
-		<td> 'Yes' votes: <%= @answer_count[:t_answers] %> </td>
-		<td> 'No' votes : <%= @answer_count[:f_answers] %> </td>
-		<td> Abstentions: <%= @answer_count[:e_answers] %> </td>
+		<td id='tdyes'> Yes votes: <%= @answer_count[:t_answers] %> </td>
+		<td id='tdno'>  No votes : <%= @answer_count[:f_answers] %> </td>
+		<td id='tdabs'> Abstentions: <%= @answer_count[:e_answers] %> </td>
 	</tr>
 	<tr>
 		<td> Valid votes :  <%= @total_valid %> </td>
 		<td> Simple majority :  <%= @einfaches_mehr %> </td>
+	</tr>
+	<tr>
+		<td> Total Answers :  <%= @answer_count[:total] %> </p>
 		<td> Absolute majority :  <%= @absolutes_mehr %> </td>
 	</tr>
 </table>

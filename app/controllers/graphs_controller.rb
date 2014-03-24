@@ -1,10 +1,12 @@
 class GraphsController < ApplicationController
 
+  before_action :authenticate_admin
+
   def index
 
     @active_question = Question.active.first
-
     @answer_count = Inquiry.get_values(@active_question)
+
 
     @total_votes    = @answer_count[:total]
     @total_valid    = @answer_count[:v_answers]
@@ -12,16 +14,22 @@ class GraphsController < ApplicationController
     @einfaches_mehr = (@total_valid.to_f / 2 + 1).floor
     @absolutes_mehr = (@total_votes.to_f / 2 + 1).floor
 
-    # Question.set_false  # alle Records auf 'false' setzen und damit Votes mehr zulassen.
+    @active_question.update(nof_votes: @total_votes)
+
+
+    # Question.set_false  # alle Records auf 'false' setzen und damit keine Votes mehr zulassen.
 
     @chart2 = LazyHighCharts::HighChart.new('column') do |f|
-      f.title({:text=>"#{@active_question.poke}" })
+
+      f.legend([enabled: 'false'])
+
+      f.title({ text: "#{@active_question.poke}" })
 
       f.series( name: 'Votes',
-                data: [ @answer_count[:t_answers],  @answer_count[:f_answers] ]
+                data: [ {y: @answer_count[:t_answers], color: '#5a5'},  @answer_count[:f_answers] ]
               )
       f.series( name: 'Votes',
-                data: [ 0,                          @answer_count[:e_answers] ]
+                data: [ 0,                          {y: @answer_count[:e_answers], color: '#777'} ]
               )
 
       ### Options for Bar

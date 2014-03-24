@@ -1,9 +1,8 @@
 class InquiriesController < ApplicationController
 
-
+  before_action :authenticate
   before_action :set_inquiry, only: [:show, :edit, :update, :destroy]
   before_action :get_active_question
-  # before_action :authenticate
   #rescue_from ActiveRecord::RecordNotFound, with: :no_record_error
 
 

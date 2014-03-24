@@ -1,6 +1,7 @@
 class QuestionsController < ApplicationController
+
+  before_action :authenticate_admin
   before_action :set_question, only: [:show, :edit, :update, :destroy, :set_active]
-  before_action :authenticate
 
 
   # GET /questions
@@ -25,11 +26,13 @@ class QuestionsController < ApplicationController
     #    x.is_active = 'false' 
     #    x.save
     #end
+    logger.debug "function set_active entered"
     Question.set_false  # alle Records auf 'false' setzen
     set_question        # find current active question
     @question.is_active = 'true' # setzt nur current auf 'true'
     @question.save
     @active_question_count = Question.nofAnswers(get_active)  
+    logger.debug "function set_active exit"
   end
 
 
@@ -92,7 +95,7 @@ class QuestionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_params
-      params.require(:question).permit(:poke, :is_active)
+      params.require(:question).permit(:poke, :is_active, :nof_answers)
     end
 
 

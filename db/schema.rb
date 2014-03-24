@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303144957) do
+ActiveRecord::Schema.define(version: 20140318145852) do
 
   create_table "answers", force: true do |t|
     t.boolean  "answer"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140303144957) do
   create_table "questions", force: true do |t|
     t.string  "poke"
     t.boolean "is_active"
+    t.decimal "nof_votes"
   end
 
   create_table "trials", force: true do |t|
