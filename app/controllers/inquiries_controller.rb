@@ -34,7 +34,14 @@ class InquiriesController < ApplicationController
   # POST /inquiries
   # POST /inquiries.json
   def create
+
     @inquiry = Inquiry.new(inquiry_params)
+    logger.debug "params from POST: #{params[:question_id].to_i}"
+    logger.debug "Active Question : #{@question.id}"
+    if params[:question_id].to_i != @question.id
+      redirect_to '/pages/show', alert: 'Wrong Question, please reload'
+      return
+    end
 
     @inquiry.session_id = session[:current_user_id]
     @inquiry.question_id = @question.id
@@ -83,6 +90,7 @@ private
   end
 
   def get_active_question
+    logger.debug "inquiries controller :: get_active_question"
     @question = Question.active.first
   end
 

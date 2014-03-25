@@ -1,5 +1,8 @@
 <%= form_for(@inquiry) do |f| %>
 
+<input type="hidden" name="question_id" value="<%= @question.id %>">
+
+<!--%= f.hidden_field(:question_id, @question_id) %-->
 
 <h4><%= @question.poke %></h4>
 <!--h4>Frage <%= @question.id %>: <%= @question.poke %></h4-->

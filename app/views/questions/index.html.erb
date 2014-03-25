@@ -8,7 +8,7 @@
       <!--th><%= model_class.human_attribute_name(:id) %></th-->
       <th><%= model_class.human_attribute_name(:poke) %></th>
       <th><%= model_class.human_attribute_name(:nof_votes) %></th>
-      <th><%= model_class.human_attribute_name(:is_active) %></th>
+      <!--th><%= model_class.human_attribute_name(:is_active) %></th-->
       <!--th></th-->
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -20,8 +20,8 @@
         <td><%= link_to question.poke, question_path(question)  %></td>
         <td><%= question.nof_votes %></td>
         <!--the following td contains a conditional formatting-->
-        <td class="<%= 'bla' if question.is_active %>"><%= question.is_active %></td>
-        <td><%= link_to 'Make Active', activequestion_path(question), :class => 'btn btn-mini' %></td>
+        <!--td class="<%= 'bla' if question.is_active %>"><%= question.is_active %></td-->
+        <td><%= link_to 'Vote for', activequestion_path(question), :class => 'btn btn-mini' %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_question_path(question), :class => 'btn btn-mini' %>

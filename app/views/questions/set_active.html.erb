@@ -15,7 +15,8 @@
 <p class="text-info">Users now may answer the question displayed.</p>
 </div>
 
-<p>Number of answers: <span id="nofa"><%= @active_question_count %></span></p>
+<%= render :partial => 'get_nofa' %>
+<!--p>Number of answers: <span id="nofa"><%= @active_question_count %></span></p-->
 
 
 <%= link_to 'Close question and show graph', graphs_path, class: 'btn'  %>

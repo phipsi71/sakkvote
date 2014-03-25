@@ -8,6 +8,11 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = Question.all
+    get_active
+    _get_nofa
+    logger.debug "act_quest_count : #{@active_question_count}"
+    @active_question.update(nof_votes: @active_question_count) if @active_question != nil
+    Question.set_false
   end
 
   # GET /questions/1
@@ -26,15 +31,21 @@ class QuestionsController < ApplicationController
     #    x.is_active = 'false' 
     #    x.save
     #end
-    logger.debug "function set_active entered"
+    #logger.debug "function set_active entered"
     Question.set_false  # alle Records auf 'false' setzen
     set_question        # find current active question
     @question.is_active = 'true' # setzt nur current auf 'true'
     @question.save
-    @active_question_count = Question.nofAnswers(get_active)  
-    logger.debug "function set_active exit"
+    _get_nofa
+    #@active_question_count = Question.nofAnswers(get_active) 
+    #logger.debug "function set_active exit"
   end
 
+  def _get_nofa
+    logger.debug "function get_nofa entered"
+    @active_question_count = Question.nofAnswers(get_active)
+    #render :partial => 'get_nofa'
+  end
 
   def get_active 
     @active_question = Question.active.first
