@@ -13445,3 +13445,490 @@ D, [2014-03-25T13:48:06.286513 #6792] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1
 D, [2014-03-25T13:48:06.293565 #6792] DEBUG -- :   [1m[35m (6.7ms)[0m  commit transaction
 D, [2014-03-25T13:48:06.294595 #6792] DEBUG -- :   [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1[0m
 D, [2014-03-25T13:48:06.295828 #6792] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "inquiries" WHERE (question_id = 6)
+D, [2014-03-31T08:27:59.814681 #12851] DEBUG -- : 
+D, [2014-03-31T08:27:59.814851 #12851] DEBUG -- : 
+I, [2014-03-31T08:27:59.815270 #12851]  INFO -- : Started GET "/" for 192.9.200.73 at 2014-03-31 08:27:59 +0200
+D, [2014-03-31T08:28:00.071699 #12851] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2014-03-31T08:28:01.934256 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:01.934596 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:01.934934 #12851]  INFO -- : Started GET "/" for 192.9.200.73 at 2014-03-31 08:28:01 +0200
+D, [2014-03-31T08:28:01.948566 #12851] DEBUG -- :   [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1
+D, [2014-03-31T08:28:02.015036 #12851] DEBUG -- :   [1m[36mInquiry Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "inquiries" WHERE (session_id = 'f2249727e8f3db7284e796c41fe80a72' AND question_id = 6) LIMIT 1[0m
+D, [2014-03-31T08:28:02.442288 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.445276 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.448465 #12851]  INFO -- : Started GET "/assets/application.css?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.469937 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.470048 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.470419 #12851]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.479526 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.479634 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.479899 #12851]  INFO -- : Started GET "/assets/scaffolds.css?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.486410 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.486535 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.486797 #12851]  INFO -- : Started GET "/assets/bootstrap_and_overrides.css?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.496482 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.497045 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.497345 #12851]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.504335 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.504524 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.504738 #12851]  INFO -- : Started GET "/assets/favicon.ico" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.526280 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.526499 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.526733 #12851]  INFO -- : Started GET "/assets/favicon.ico" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.679531 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.679683 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.679981 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.691437 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.699081 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.699347 #12851]  INFO -- : Started GET "/assets/turbolinks.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.752523 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.752713 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.753184 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.765637 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.765844 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.766162 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.775087 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.775272 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.775764 #12851]  INFO -- : Started GET "/assets/jquery.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.791436 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.791552 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.791822 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.799907 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.800011 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.800244 #12851]  INFO -- : Started GET "/assets/jquery_ujs.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.809833 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.810111 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.810557 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.823469 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.823603 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.824054 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.836313 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.839158 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.839479 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.847912 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.848053 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.848321 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.856531 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.859486 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.864935 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.875290 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.875489 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.875747 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.884575 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.887211 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.887546 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.895874 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.898755 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.899051 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.909978 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.910170 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.910476 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.918820 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.921897 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.922236 #12851]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.952683 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.952830 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.953104 #12851]  INFO -- : Started GET "/assets/graphs.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.959533 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.959641 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.959903 #12851]  INFO -- : Started GET "/assets/highcharts.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.969934 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.970040 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.970305 #12851]  INFO -- : Started GET "/assets/inquiries.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.978121 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.979771 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.980065 #12851]  INFO -- : Started GET "/assets/pages.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.986537 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.986699 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.986939 #12851]  INFO -- : Started GET "/assets/questions.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:02.993202 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:02.993642 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:02.993992 #12851]  INFO -- : Started GET "/assets/application.js?body=1" for 192.9.200.73 at 2014-03-31 08:28:02 +0200
+D, [2014-03-31T08:28:03.076030 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:03.076437 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:03.076691 #12851]  INFO -- : Started GET "/assets/sakkvote.png" for 192.9.200.73 at 2014-03-31 08:28:03 +0200
+D, [2014-03-31T08:28:41.707100 #12851] DEBUG -- : 
+D, [2014-03-31T08:28:41.707595 #12851] DEBUG -- : 
+I, [2014-03-31T08:28:41.707823 #12851]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:28:41 +0200
+D, [2014-03-31T08:29:56.531636 #12851] DEBUG -- : 
+D, [2014-03-31T08:29:56.531802 #12851] DEBUG -- : 
+I, [2014-03-31T08:29:56.532501 #12851]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:29:56 +0200
+D, [2014-03-31T08:30:03.867638 #12851] DEBUG -- : 
+D, [2014-03-31T08:30:03.868013 #12851] DEBUG -- : 
+I, [2014-03-31T08:30:03.868579 #12851]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:30:03 +0200
+D, [2014-03-31T08:30:50.332508 #12851] DEBUG -- : 
+D, [2014-03-31T08:30:50.332682 #12851] DEBUG -- : 
+I, [2014-03-31T08:30:50.332968 #12851]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:30:50 +0200
+D, [2014-03-31T08:30:50.343960 #12851] DEBUG -- : 
+D, [2014-03-31T08:30:50.344150 #12851] DEBUG -- : 
+I, [2014-03-31T08:30:50.344473 #12851]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:30:50 +0200
+D, [2014-03-31T08:31:08.410873 #12851] DEBUG -- : 
+D, [2014-03-31T08:31:08.411046 #12851] DEBUG -- : 
+I, [2014-03-31T08:31:08.411502 #12851]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:31:08 +0200
+D, [2014-03-31T08:31:29.343622 #13009] DEBUG -- : 
+D, [2014-03-31T08:31:29.343826 #13009] DEBUG -- : 
+I, [2014-03-31T08:31:29.344280 #13009]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:31:29 +0200
+D, [2014-03-31T08:31:29.598469 #13009] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2014-03-31T08:31:29.661014 #13009] DEBUG -- : 
+D, [2014-03-31T08:31:29.661172 #13009] DEBUG -- : 
+I, [2014-03-31T08:31:29.661338 #13009]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:31:29 +0200
+D, [2014-03-31T08:31:35.313469 #13009] DEBUG -- : 
+D, [2014-03-31T08:31:35.313757 #13009] DEBUG -- : 
+I, [2014-03-31T08:31:35.314035 #13009]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:31:35 +0200
+D, [2014-03-31T08:31:38.378421 #13009] DEBUG -- : 
+D, [2014-03-31T08:31:38.378663 #13009] DEBUG -- : 
+I, [2014-03-31T08:31:38.378887 #13009]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:31:38 +0200
+D, [2014-03-31T08:31:58.934598 #13009] DEBUG -- : 
+D, [2014-03-31T08:31:58.934853 #13009] DEBUG -- : 
+I, [2014-03-31T08:31:58.935077 #13009]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:31:58 +0200
+D, [2014-03-31T08:32:08.421958 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:08.422204 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:08.422610 #13009]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:32:08 +0200
+D, [2014-03-31T08:32:08.434825 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:08.435078 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:08.435291 #13009]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:32:08 +0200
+D, [2014-03-31T08:32:14.173316 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.173692 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.173918 #13009]  INFO -- : Started GET "/questions" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.226182 #13009] DEBUG -- :   [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1
+D, [2014-03-31T08:32:14.236677 #13009] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1[0m
+D, [2014-03-31T08:32:14.247080 #13009] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "inquiries" WHERE (question_id = 6)
+D, [2014-03-31T08:32:14.247947 #13009] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2014-03-31T08:32:14.256636 #13009] DEBUG -- :   [1m[35mSQL (0.7ms)[0m  UPDATE "questions" SET "nof_votes" = ? WHERE "questions"."id" = 6  [["nof_votes", 8]]
+D, [2014-03-31T08:32:14.377598 #13009] DEBUG -- :   [1m[36m (120.3ms)[0m  [1mcommit transaction[0m
+D, [2014-03-31T08:32:14.383466 #13009] DEBUG -- :   [1m[35mSQL (5.0ms)[0m  UPDATE "questions" SET "is_active" = 'f'
+D, [2014-03-31T08:32:14.407198 #13009] DEBUG -- :   [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+D, [2014-03-31T08:32:14.725634 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.727745 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.728048 #13009]  INFO -- : Started GET "/assets/application.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.741983 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.742268 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.742512 #13009]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.751551 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.751759 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.752071 #13009]  INFO -- : Started GET "/assets/bootstrap_and_overrides.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.760784 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.760908 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.761107 #13009]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.768410 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.770242 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.770417 #13009]  INFO -- : Started GET "/assets/sakkvote.png" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.774955 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.775034 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.775315 #13009]  INFO -- : Started GET "/assets/scaffolds.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.779710 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.779841 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.782243 #13009]  INFO -- : Started GET "/assets/jquery.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.819524 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.819840 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.820077 #13009]  INFO -- : Started GET "/assets/turbolinks.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.825598 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.825709 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.825894 #13009]  INFO -- : Started GET "/assets/jquery_ujs.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.831132 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.831498 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.831684 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.836444 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.836568 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.836771 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.843890 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.844067 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.844347 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.858138 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.861177 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.861568 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.870204 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.870450 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.870863 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.877107 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.877231 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.877574 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.886114 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.886380 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.886793 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.896938 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.897128 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.897404 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.904302 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.907127 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.907436 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.914125 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.914314 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.917557 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.926912 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.929776 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.930018 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.936330 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.936510 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.939896 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.946024 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.946192 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.947117 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.953253 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.953421 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.956609 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.984254 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.984634 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.985016 #13009]  INFO -- : Started GET "/assets/graphs.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:14.995123 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:14.995233 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:14.995579 #13009]  INFO -- : Started GET "/assets/highcharts.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:14 +0200
+D, [2014-03-31T08:32:15.003193 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:15.003335 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:15.003674 #13009]  INFO -- : Started GET "/assets/inquiries.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:15 +0200
+D, [2014-03-31T08:32:15.011088 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:15.011243 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:15.011569 #13009]  INFO -- : Started GET "/assets/questions.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:15 +0200
+D, [2014-03-31T08:32:15.018025 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:15.018553 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:15.018844 #13009]  INFO -- : Started GET "/assets/pages.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:15 +0200
+D, [2014-03-31T08:32:15.024880 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:15.025008 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:15.025246 #13009]  INFO -- : Started GET "/assets/application.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:15 +0200
+D, [2014-03-31T08:32:15.122687 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:15.122888 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:15.123105 #13009]  INFO -- : Started GET "/assets/favicon.ico" for 192.9.200.73 at 2014-03-31 08:32:15 +0200
+D, [2014-03-31T08:32:19.585575 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:19.587884 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:19.588115 #13009]  INFO -- : Started GET "/questions/1/set_active" for 192.9.200.73 at 2014-03-31 08:32:19 +0200
+D, [2014-03-31T08:32:19.598176 #13009] DEBUG -- :   [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "1"]]
+D, [2014-03-31T08:32:19.611512 #13009] DEBUG -- :   [1m[36mSQL (12.2ms)[0m  [1mUPDATE "questions" SET "is_active" = 'f'[0m
+D, [2014-03-31T08:32:19.612288 #13009] DEBUG -- :   [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT 1  [["id", "1"]]
+D, [2014-03-31T08:32:19.613448 #13009] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+D, [2014-03-31T08:32:19.615494 #13009] DEBUG -- :   [1m[35mSQL (0.4ms)[0m  UPDATE "questions" SET "is_active" = ? WHERE "questions"."id" = 1  [["is_active", true]]
+D, [2014-03-31T08:32:19.620841 #13009] DEBUG -- :   [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+D, [2014-03-31T08:32:19.622066 #13009] DEBUG -- :   [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1
+D, [2014-03-31T08:32:19.624101 #13009] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "inquiries" WHERE (question_id = 1)[0m
+D, [2014-03-31T08:32:27.447041 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:27.447219 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:27.447633 #13009]  INFO -- : Started GET "/" for 192.9.200.73 at 2014-03-31 08:32:27 +0200
+D, [2014-03-31T08:32:29.143996 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:29.144296 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:29.144816 #13009]  INFO -- : Started GET "/" for 192.9.200.73 at 2014-03-31 08:32:29 +0200
+D, [2014-03-31T08:32:29.765332 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:29.765721 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:29.766061 #13009]  INFO -- : Started GET "/questions/1/_get_nofa.js?_=1396247890867" for 192.9.200.73 at 2014-03-31 08:32:29 +0200
+D, [2014-03-31T08:32:29.774513 #13009] DEBUG -- :   [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1
+D, [2014-03-31T08:32:29.776860 #13009] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "inquiries" WHERE (question_id = 1)[0m
+D, [2014-03-31T08:32:34.777568 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:34.777812 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:34.778182 #13009]  INFO -- : Started GET "/questions/1/_get_nofa.js?_=1396247890868" for 192.9.200.73 at 2014-03-31 08:32:34 +0200
+D, [2014-03-31T08:32:34.787285 #13009] DEBUG -- :   [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1
+D, [2014-03-31T08:32:34.789532 #13009] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "inquiries" WHERE (question_id = 1)[0m
+D, [2014-03-31T08:32:35.423033 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.423159 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.423596 #13009]  INFO -- : Started GET "/" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.430925 #13009] DEBUG -- :   [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1
+D, [2014-03-31T08:32:35.443228 #13009] DEBUG -- :   [1m[36mInquiry Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "inquiries" WHERE (session_id = 'f2249727e8f3db7284e796c41fe80a72' AND question_id = 1) LIMIT 1[0m
+D, [2014-03-31T08:32:35.606833 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.617833 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.618153 #13009]  INFO -- : Started GET "/assets/application.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.623263 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.626853 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.627256 #13009]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.634483 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.634613 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.634873 #13009]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.638869 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.639001 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.639295 #13009]  INFO -- : Started GET "/assets/bootstrap_and_overrides.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.643347 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.643588 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.643871 #13009]  INFO -- : Started GET "/assets/scaffolds.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.647757 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.658910 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.659133 #13009]  INFO -- : Started GET "/assets/sakkvote.png" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.663095 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.663223 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.663479 #13009]  INFO -- : Started GET "/assets/favicon.ico" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.667338 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.667524 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.667811 #13009]  INFO -- : Started GET "/assets/jquery_ujs.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.675151 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.675493 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.680901 #13009]  INFO -- : Started GET "/assets/turbolinks.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.685234 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.685580 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.685893 #13009]  INFO -- : Started GET "/assets/jquery.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.689986 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.692817 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.696517 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.700482 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.700724 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.701178 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.705924 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.706058 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.706564 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.716011 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.716189 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.716515 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.720415 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.763777 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.764251 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.769707 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.769812 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.770041 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.774525 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.774706 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.775153 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.785150 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.785265 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.785596 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.798578 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.798762 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.799129 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.803615 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.803725 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.804004 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.813176 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.813448 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.813740 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.818172 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.818542 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.818865 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.822744 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.823027 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.823350 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.833577 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.833707 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.833994 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.843560 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.843688 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.843969 #13009]  INFO -- : Started GET "/assets/graphs.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.847920 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.848065 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.848595 #13009]  INFO -- : Started GET "/assets/highcharts.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.855223 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.855342 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.855659 #13009]  INFO -- : Started GET "/assets/inquiries.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.859519 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.859794 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.860064 #13009]  INFO -- : Started GET "/assets/pages.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.866279 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.866745 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.867023 #13009]  INFO -- : Started GET "/assets/questions.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.871504 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.871781 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.871974 #13009]  INFO -- : Started GET "/assets/favicon.ico" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:35.876029 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:35.876293 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:35.876748 #13009]  INFO -- : Started GET "/assets/application.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:35 +0200
+D, [2014-03-31T08:32:39.779092 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:39.779329 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:39.779782 #13009]  INFO -- : Started GET "/questions/1/_get_nofa.js?_=1396247890869" for 192.9.200.73 at 2014-03-31 08:32:39 +0200
+D, [2014-03-31T08:32:39.788571 #13009] DEBUG -- :   [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1
+D, [2014-03-31T08:32:39.790699 #13009] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "inquiries" WHERE (question_id = 1)[0m
+D, [2014-03-31T08:32:43.299601 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.299835 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.300099 #13009]  INFO -- : Started POST "/inquiries" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.309909 #13009] DEBUG -- :   [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1
+D, [2014-03-31T08:32:43.312646 #13009] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+D, [2014-03-31T08:32:43.316949 #13009] DEBUG -- :   [1m[35mInquiry Exists (0.3ms)[0m  SELECT 1 AS one FROM "inquiries" WHERE ("inquiries"."question_id" = 1 AND "inquiries"."session_id" = 'f2249727e8f3db7284e796c41fe80a72') LIMIT 1
+D, [2014-03-31T08:32:43.330218 #13009] DEBUG -- :   [1m[36mSQL (9.6ms)[0m  [1mINSERT INTO "inquiries" ("answer", "created_at", "question_id", "remark", "session_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["answer", "yes"], ["created_at", Mon, 31 Mar 2014 06:32:43 UTC +00:00], ["question_id", 1], ["remark", "yaa"], ["session_id", "f2249727e8f3db7284e796c41fe80a72"], ["updated_at", Mon, 31 Mar 2014 06:32:43 UTC +00:00]]
+D, [2014-03-31T08:32:43.341945 #13009] DEBUG -- :   [1m[35m (11.0ms)[0m  commit transaction
+D, [2014-03-31T08:32:43.552719 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.552846 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.553074 #13009]  INFO -- : Started GET "/pages/show" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.651805 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.652156 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.655766 #13009]  INFO -- : Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.661107 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.664876 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.665311 #13009]  INFO -- : Started GET "/assets/bootstrap_and_overrides.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.669957 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.670113 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.670422 #13009]  INFO -- : Started GET "/assets/scaffolds.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.674835 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.674984 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.675250 #13009]  INFO -- : Started GET "/assets/sakkvote.png" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.681777 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.681890 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.682214 #13009]  INFO -- : Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.686568 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.686698 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.687119 #13009]  INFO -- : Started GET "/assets/application.css?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.691976 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.692090 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.692361 #13009]  INFO -- : Started GET "/assets/favicon.ico" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.699108 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.701934 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.702217 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.709622 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.712462 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.712897 #13009]  INFO -- : Started GET "/assets/jquery_ujs.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.722875 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.723058 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.723539 #13009]  INFO -- : Started GET "/assets/turbolinks.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.728240 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.731729 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.732403 #13009]  INFO -- : Started GET "/assets/jquery.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.742649 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.742785 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.743131 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.748276 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.748568 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.748963 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.756835 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.756974 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.760002 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.765884 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.767228 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.767554 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.772057 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.772235 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.775847 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.780061 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.780238 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.780890 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.787731 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.787852 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.788407 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.795529 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.798904 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.799193 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.803150 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.803287 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.803658 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.810096 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.813538 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.813885 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.820199 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.820318 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.820729 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.825147 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.825466 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.828588 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.833449 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.833948 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.834276 #13009]  INFO -- : Started GET "/assets/graphs.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.841653 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.849500 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.849811 #13009]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.859175 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.862072 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.862426 #13009]  INFO -- : Started GET "/assets/highcharts.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.868001 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.871026 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.871355 #13009]  INFO -- : Started GET "/assets/pages.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.875423 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.875664 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.875941 #13009]  INFO -- : Started GET "/assets/questions.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.881018 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.881193 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.881670 #13009]  INFO -- : Started GET "/assets/inquiries.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.886739 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.886962 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.887387 #13009]  INFO -- : Started GET "/assets/application.js?body=1" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:43.893397 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:43.893567 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:43.893922 #13009]  INFO -- : Started GET "/assets/favicon.ico" for 192.9.200.73 at 2014-03-31 08:32:43 +0200
+D, [2014-03-31T08:32:44.778793 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:44.779042 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:44.779425 #13009]  INFO -- : Started GET "/questions/1/_get_nofa.js?_=1396247890870" for 192.9.200.73 at 2014-03-31 08:32:44 +0200
+D, [2014-03-31T08:32:44.788123 #13009] DEBUG -- :   [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1[0m
+D, [2014-03-31T08:32:44.790283 #13009] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "inquiries" WHERE (question_id = 1)
+D, [2014-03-31T08:32:49.780571 #13009] DEBUG -- : 
+D, [2014-03-31T08:32:49.780802 #13009] DEBUG -- : 
+I, [2014-03-31T08:32:49.781108 #13009]  INFO -- : Started GET "/questions/1/_get_nofa.js?_=1396247890871" for 192.9.200.73 at 2014-03-31 08:32:49 +0200
+D, [2014-03-31T08:32:49.788601 #13009] DEBUG -- :   [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE (is_active = 't') ORDER BY "questions"."id" ASC LIMIT 1[0m
+D, [2014-03-31T08:32:49.790493 #13009] DEBUG -- :   [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "inquiries" WHERE (question_id = 1)

@@ -1,17 +1,18 @@
-== README
+== e-Voting
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This tool allows you to make anonymous votings ( e.g. on a conference, meeting, etc)
+from any web capable device (PCs, iPod, iPhone, tablets, etc)
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.0.0 and higher
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+Just run rake db:migrate, then a sqlite3 DB will be setup
 
 * Database initialization
 
@@ -20,9 +21,8 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+The service was successfully tested on Apache/2.2.15 on Centos with Phusion Passenger version 4.0.29 
 
-* ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+

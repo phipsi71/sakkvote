@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ac",
+				"active_question_count"
+			],
+			[
 				"question",
 				"question_id"
 			],
@@ -35,40 +39,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/controllers/questions_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2625,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/inquiries_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2767,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/inquiries/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 1615,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 219 files for \"logger\"\n\nW:\\railsapps\\sakkvote\\app\\controllers\\inquiries_controller.rb:\n   90  \n   91    def get_active_question\n   92:     logger.debug \"inquiries controller :: get_active_question\"\n   93      @question = Question.active.first\n   94    end\n\nW:\\railsapps\\sakkvote\\app\\controllers\\questions_controller.rb:\n   27      #    x.save\n   28      #end\n   29:     logger.debug \"function set_active entered\"\n   30      Question.set_false  # alle Records auf 'false' setzen\n   31      set_question        # find current active question\n   ..\n   33      @question.save\n   34      @active_question_count = Question.nofAnswers(get_active)  \n   35:     logger.debug \"function set_active exit\"\n   36    end\n   37  \n\nW:\\railsapps\\sakkvote\\config\\environment.rb:\n    5  Sakkvote::Application.initialize!\n    6  \n    7: Rails.logger = Logger.new('sakkvote.log')\n    8: Rails.logger.level = 0\n    9  \n\nW:\\railsapps\\sakkvote\\config\\environments\\development.rb:\n   17    config.action_mailer.raise_delivery_errors = false\n   18  \n   19:   # Print deprecation notices to the Rails logger.\n   20    config.active_support.deprecation = :log\n   21  \n\nW:\\railsapps\\sakkvote\\config\\environments\\production.rb:\n   49    # config.log_tags = [ :subdomain, :uuid ]\n   50  \n   51:   # Use a different logger for distributed setups.\n   52:   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)\n   53  \n   54    # Use a different cache store in production.\n   ..\n   77  \n   78    # Use default logging formatter so that PID and timestamp are not suppressed.\n   79:   config.log_formatter = ::Logger::Formatter.new\n   80  end\n   81  \n\n11 matches across 5 files\n",
-			"settings":
-			{
-				"buffer_size": 1667,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -114,28 +84,33 @@
 	},
 	"file_history":
 	[
-		"/W/railsapps/sakkvote/app/assets/javascripts/application.js",
-		"/W/railsapps/sakkvote/app/controllers/inquiries_controller.rb",
 		"/W/railsapps/sakkvote/app/controllers/questions_controller.rb",
+		"/W/railsapps/sakkvote/app/assets/javascripts/application.js",
+		"/W/railsapps/sakkvote/app/views/questions/index.html.erb",
+		"/W/railsapps/sakkvote/README.rdoc",
 		"/W/railsapps/sakkvote/app/controllers/graphs_controller.rb",
+		"/W/railsapps/sakkvote/app/views/questions/set_active.html.erb",
+		"/W/railsapps/sakkvote/config/routes.rb",
+		"/W/railsapps/sakkvote/app/views/questions/_get_nofa.html.erb",
+		"/W/railsapps/sakkvote/app/views/questions/_get_nofa.js.erb",
+		"/W/railsapps/sakkvote/app/views/questions/set_active.js.erb",
+		"/W/railsapps/sakkvote/app/controllers/inquiries_controller.rb",
+		"/W/railsapps/sakkvote/app/views/questions/get_nofa.js.erb",
+		"/W/railsapps/sakkvote/app/views/questions/_nofa.html.erb",
+		"/W/railsapps/sakkvote/app/views/inquiries/_form.html.erb",
+		"/W/railsapps/sakkvote/app/views/questions/_form.html.erb",
 		"/W/railsapps/sakkvote/app/models/inquiry.rb",
 		"/W/railsapps/sakkvote/app/views/graphs/index.html.erb",
 		"/W/railsapps/sakkvote/app/assets/stylesheets/application.css.scss",
 		"/W/railsapps/sakkvote/app/controllers/pages_controller.rb",
 		"/W/railsapps/sakkvote/db/migrate/20140318145852_add_votes_to_questions.rb",
-		"/W/railsapps/sakkvote/app/views/questions/index.html.erb",
-		"/W/railsapps/sakkvote/app/views/questions/set_active.html.erb",
 		"/W/railsapps/sakkvote/app/views/questions/new.html.erb",
-		"/W/railsapps/sakkvote/app/views/questions/_form.html.erb",
 		"/W/railsapps/sakkvote/app/controllers/application_controller.rb",
 		"/W/railsapps/sakkvote/config/initializers/auth.rb",
-		"/W/railsapps/sakkvote/app/views/inquiries/_form.html.erb",
 		"/W/railsapps/sakkvote/app/views/layouts/application.html.erb",
 		"/W/railsapps/sakkvote/.gitignore",
 		"/W/railsapps/sakkvote/config/environment.rb",
 		"/W/railsapps/sakkvote/app/assets/stylesheets/bootstrap_and_overrides.css.less",
-		"/W/railsapps/sakkvote/app/views/questions/set_active.js.erb",
-		"/W/railsapps/sakkvote/config/routes.rb",
 		"/W/railsapps/sakkvote/app/views/questions/get_active.html.erb",
 		"/W/railsapps/sakkvote/app/models/question.rb",
 		"/W/railsapps/sakkvote/app/assets/javascripts/inquiries.js",
@@ -219,9 +194,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
+			"W:\\railsapps\\sakkvote",
+			"W:\\railsapps\\sakkvote\\app",
 			"W:\\railsapps\\sakkvote",
 			"W:\\railsapps\\mini1\\app",
 			"W:\\railsapps\\mini1",
@@ -238,6 +215,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Make Active",
+			"active_question_count",
+			"logger",
+			"render :partial",
+			"set_active",
+			"active_question_count",
+			"set_active",
 			"logger",
 			"please wait for the first",
 			"get_values",
@@ -283,176 +267,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/controllers/questions_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2625,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								855,
-								855
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/controllers/inquiries_controller.rb",
-					"settings":
-					{
-						"buffer_size": 2767,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1087,
-								1087
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/inquiries/_form.html.erb",
-					"settings":
-					{
-						"buffer_size": 1615,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								100,
-								100
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"settings":
-					{
-						"buffer_size": 1667,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										149,
-										155
-									],
-									[
-										380,
-										386
-									],
-									[
-										663,
-										669
-									],
-									[
-										832,
-										838
-									],
-									[
-										841,
-										847
-									],
-									[
-										881,
-										887
-									],
-									[
-										1083,
-										1089
-									],
-									[
-										1293,
-										1299
-									],
-									[
-										1342,
-										1348
-									],
-									[
-										1390,
-										1396
-									],
-									[
-										1599,
-										1605
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								149,
-								207
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -512,6 +328,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 371.0,
+	"side_bar_width": 320.0,
 	"status_bar_visible": true
 }

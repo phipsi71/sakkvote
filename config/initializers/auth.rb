@@ -1,6 +1,6 @@
 
-USER_ID   = "vote@sakk"
-PASSWORD  = "s3cr3t"
+USER_ID   = "votesakk"
+PASSWORD  = "wasa53"
 
 ADMIN_ID	= "voteadmin"
 ADMINPASS	= "effinger"
