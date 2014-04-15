@@ -6,19 +6,16 @@
 </p>
 
 
-<%
-=begin %> link_to 'Edit', edit_question_path(@question) %> |
-<%
-=end %>
+<!--% link_to 'Edit', edit_question_path(@question) %-->
 
 <div>
-<p class="text-info">Users now may answer the question displayed.</p>
+	<p class="text-info">Users now may answer the question displayed.</p>
 </div>
 
-<%= render :partial => 'get_nofa' %>
+<%= render partial: 'get_nofa', layout: false %>
 <!--p>Number of answers: <span id="nofa"><%= @active_question_count %></span></p-->
 
 
-<%= link_to 'Close question and show graph', graphs_path, class: 'btn'  %>
-<%= link_to 'Questions Overview', questions_path, class: 'btn'  %>
 
+<%= link_to 'Show graph', graphs_path,    class: 'btn btn-default'  %>
+<%= link_to 'Questions',  questions_path, class: 'btn btn-default'  %>

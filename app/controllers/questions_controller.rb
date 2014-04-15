@@ -9,7 +9,8 @@ class QuestionsController < ApplicationController
   def index
     @questions = Question.all
     get_active
-    _get_nofa
+    #_get_nofa
+    @active_question_count = Question.nofAnswers(get_active)
     logger.debug "act_quest_count : #{@active_question_count}"
     @active_question.update(nof_votes: @active_question_count) if @active_question != nil
     Question.set_false
@@ -44,10 +45,20 @@ class QuestionsController < ApplicationController
   def _get_nofa
     logger.debug "function get_nofa entered"
     @active_question_count = Question.nofAnswers(get_active)
-    #render :partial => 'get_nofa'
+    logger.debug "nofa: #{@active_question_count}"
+    #@active_question_count
+
+    respond_to do |format|
+      msg = { active_question_count: @active_question_count }
+      format.html
+      format.js
+      format.json { render json: msg }
+    end
+
   end
 
-  def get_active 
+  def get_active
+    logger.debug "function get_active entered"
     @active_question = Question.active.first
   end
 

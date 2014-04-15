@@ -20,7 +20,7 @@ class InquiriesController < ApplicationController
   # GET /inquiries/new
   def new
     if @question.nil?
-      redirect_to '/pages/show', alert: 'Please wait for the a question to be displayed'
+      redirect_to '/pages/show', alert: 'Please wait for a question to be displayed'
     elsif Inquiry.exists?(session[:current_user_id], @question.id)
       redirect_to '/pages/show', alert: 'Question already answered. Please wait for the next question to be displayed'
     end

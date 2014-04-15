@@ -46,5 +46,5 @@ end
 
 gem 'less-rails'
 gem 'less-rails-bootstrap'
-gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
+#gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'lazy_high_charts'

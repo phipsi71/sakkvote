@@ -1,0 +1,344 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ac",
+				"active_question_count"
+			],
+			[
+				"question",
+				"question_id"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"yourC",
+				"yourColor"
+			],
+			[
+				"active",
+				"active_question_id"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"radio",
+				"radio_button"
+			],
+			[
+				"set",
+				"set_active"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"install Pckage",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 423.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/W/railsapps/sakkvote/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/W/railsapps/sakkvote/app/views/graphs/index.html.erb",
+		"/W/railsapps/sakkvote/app/assets/javascripts/graphs.js",
+		"/W/railsapps/sakkvote/app/assets/javascripts/application.js",
+		"/W/railsapps/sakkvote/app/assets/stylesheets/application.css.scss",
+		"/W/railsapps/sakkvote/app/assets/javascripts/bootstrap.js.coffee",
+		"/W/railsapps/sakkvote/app/assets/javascripts/questions.js",
+		"/W/railsapps/sakkvote/app/assets/javascripts/pages.js",
+		"/C/Users/philippb.SIAK/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/philippb.SIAK/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/philippb.SIAK/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/Users/philippb.SIAK/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/W/railsapps/sakkvote/app/views/layouts/application.html.erb",
+		"/W/railsapps/sakkvote/app/assets/javascripts/inquiries.js",
+		"/W/railsapps/sakkvote/config/initializers/auth.rb",
+		"/W/railsapps/sakkvote/README.rdoc",
+		"/W/railsapps/sakkvote/app/controllers/questions_controller.rb",
+		"/W/railsapps/sakkvote/app/views/questions/index.html.erb",
+		"/W/railsapps/sakkvote/app/controllers/graphs_controller.rb",
+		"/W/railsapps/sakkvote/app/views/questions/set_active.html.erb",
+		"/W/railsapps/sakkvote/config/routes.rb",
+		"/W/railsapps/sakkvote/app/views/questions/_get_nofa.html.erb",
+		"/W/railsapps/sakkvote/app/views/questions/_get_nofa.js.erb",
+		"/W/railsapps/sakkvote/app/views/questions/set_active.js.erb",
+		"/W/railsapps/sakkvote/app/controllers/inquiries_controller.rb",
+		"/W/railsapps/sakkvote/app/views/questions/get_nofa.js.erb",
+		"/W/railsapps/sakkvote/app/views/questions/_nofa.html.erb",
+		"/W/railsapps/sakkvote/app/views/inquiries/_form.html.erb",
+		"/W/railsapps/sakkvote/app/views/questions/_form.html.erb",
+		"/W/railsapps/sakkvote/app/models/inquiry.rb",
+		"/W/railsapps/sakkvote/app/controllers/pages_controller.rb",
+		"/W/railsapps/sakkvote/db/migrate/20140318145852_add_votes_to_questions.rb",
+		"/W/railsapps/sakkvote/app/views/questions/new.html.erb",
+		"/W/railsapps/sakkvote/app/controllers/application_controller.rb",
+		"/W/railsapps/sakkvote/.gitignore",
+		"/W/railsapps/sakkvote/config/environment.rb",
+		"/W/railsapps/sakkvote/app/views/questions/get_active.html.erb",
+		"/W/railsapps/sakkvote/app/models/question.rb",
+		"/W/railsapps/sakkvote/app/views/pages/show.js.erb",
+		"/W/railsapps/sakkvote/app/views/pages/show.html.erb",
+		"/W/railsapps/sakkvote/app/views/inquiries/index.js.erb",
+		"/W/railsapps/sakkvote/app/views/inquiries/index.json.jbuilder",
+		"/W/railsapps/sakkvote/config/locales/en.bootstrap.yml",
+		"/W/railsapps/sakkvote/app/views/shared/_error_messages.rb",
+		"/W/railsapps/sakkvote/Gemfile",
+		"/W/railsapps/mini1/Gemfile",
+		"/W/railsapps/mini1/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/W/railsapps/mini1/app/views/inquiries/_form.html.erb",
+		"/W/railsapps/mini1/app/assets/javascripts/inquiries.js",
+		"/W/railsapps/mini1/app/assets/javascripts/graphs.js",
+		"/W/railsapps/mini1/app/assets/javascripts/questions.js.coffee",
+		"/W/railsapps/mini1/app/assets/javascripts/inquiries.js.coffee",
+		"/W/railsapps/mini1/app/assets/javascripts/application.js",
+		"/W/railsapps/mini1/app/models/inquiry.rb",
+		"/W/railsapps/mini1/app/controllers/application_controller.rb",
+		"/W/railsapps/mini1/app/controllers/questions_controller.rb",
+		"/W/railsapps/mini1/app/views/questions/set_active.html.erb",
+		"/W/railsapps/mini1/app/views/questions/set_active.js.erb",
+		"/W/railsapps/mini1/app/controllers/graphs_controller.rb",
+		"/W/railsapps/mini1/app/views/questions/index.html.erb",
+		"/W/railsapps/mini1/app/models/graph.rb",
+		"/W/railsapps/mini1/db/migrate/20140115142859_change_date_format_in_inquiry.rb",
+		"/W/railsapps/mini1/db/migrate/20131107131657_create_inquiries.rb",
+		"/W/railsapps/mini1/app/controllers/inquiries_controller.rb",
+		"/W/railsapps/mini1/app/models/question.rb",
+		"/W/railsapps/mini1/db/migrate/20131107152126_add_question_id_to_inquiry.rb",
+		"/W/railsapps/mini1/app/views/graphs/index.html.erb",
+		"/W/railsapps/mini1/app/assets/stylesheets/application.css.scss",
+		"/W/railsapps/mini1/app/views/pages/show.html.erb",
+		"/W/railsapps/mini1/app/assets/stylesheets/test.css.less.OK",
+		"/W/railsapps/mini1/app/assets/stylesheets/questions.css.scss",
+		"/W/railsapps/mini1/app/assets/stylesheets/test2.css.less.NOK",
+		"/W/railsapps/mini1/app/views/layouts/application.html.erb",
+		"/W/railsapps/mini1/app/assets/stylesheets/flat-ui-fonts.css",
+		"/W/railsapps/mini1/config/initializers/auth.rb",
+		"/W/railsapps/mini1/app/controllers/pages_controller.rb",
+		"/W/railsapps/mini1/app/assets/javascripts/bootstrap.js.coffee",
+		"/W/railsapps/mini1/app/assets/stylesheets/inquiries.css.scss",
+		"/W/railsapps/mini1/app/views/questions/_form.html.erb",
+		"/W/railsapps/mini1/config/deploy.rb",
+		"/W/railsapps/mini1/config/deploy.rb.old",
+		"/W/railsapps/mini1/app/views/questions/show.html.erb",
+		"/W/railsapps/mini1/app/views/inquiries/new.html.erb",
+		"/W/railsapps/mini1/app/views/inquiries/show.html.erb",
+		"/W/railsapps/mssqltest/config/database.yml",
+		"/W/railsapps/mssqltest/app/controllers/trials_controller.rb",
+		"/W/railsapps/mssqltest/app/models/trial.rb",
+		"/W/railsapps/mssqltest/config/routes.rb",
+		"/W/railsapps/mssqltest/app/views/trials/index.html.erb",
+		"/W/railsapps/mssqltest/config/initializers/sakk_db_conventions.rb",
+		"/W/railsapps/mssqltest/Gemfile",
+		"/W/railsapps/mini1/config/routes.rb",
+		"/W/railsapps/mini1/app/assets/stylesheets/bootstrap_and_overrides.css",
+		"/W/railsapps/mini1/app/assets/stylesheets/application.css",
+		"/W/railsapps/mini1/app/views/voters/_form.html.erb",
+		"/W/railsapps/mini1/app/assets/stylesheets/bootstrap-switch.less",
+		"/W/railsapps/mini1/app/controllers/voters_controller.rb",
+		"/W/railsapps/mini1/README.rdoc",
+		"/W/railsapps/mini1/app/views/inquiries/index.html.erb",
+		"/W/railsapps/mini1/app/views/graphs/show.html.erb",
+		"/W/railsapps/mini1/app/assets/javascripts/set_active.js",
+		"/W/railsapps/mini1/app/assets/javascripts/voters.js.coffee",
+		"/W/railsapps/mini1/app/assets/javascripts/highcharts.js",
+		"/W/download/js/highcharts.js",
+		"/W/railsapps/mini1/app/views/questions/show_active.html.erb",
+		"/W/railsapps/mini1/app/controllers/currentquestions_controller.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"W:\\railsapps\\sakkvote",
+			"W:\\railsapps\\sakkvote\\app",
+			"W:\\railsapps\\sakkvote",
+			"W:\\railsapps\\mini1\\app",
+			"W:\\railsapps\\mini1",
+			"W:\\railsapps\\mini1\\app",
+			"W:\\railsapps\\mini1\\app\\controllers",
+			"W:\\railsapps\\mini1",
+			"W:\\railsapps\\mini1\\app",
+			"W:\\railsapps\\mini1\\app\\views\\inquiries",
+			"W:\\railsapps\\mini1"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"jquery-ujs",
+			"hide",
+			"height",
+			"less",
+			"Make Active",
+			"active_question_count",
+			"logger",
+			"render :partial",
+			"set_active",
+			"active_question_count",
+			"set_active",
+			"logger",
+			"please wait for the first",
+			"get_values",
+			"active_question_id",
+			"show.js",
+			"flash",
+			"flash[",
+			"Thanks for your",
+			"'t'",
+			"can't be blank",
+			"already answered",
+			"already been answered",
+			"inquiry_params",
+			"@",
+			"$",
+			"debugger",
+			"@answer_count",
+			"spacer",
+			"session",
+			"house",
+			"less",
+			"debugger",
+			"get_active",
+			"debugger"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$",
+			"@",
+			"trial",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 320.0,
+	"status_bar_visible": true
+}

@@ -10,19 +10,39 @@
 
 
 
-  <div class="btn-group btn-group-large" data-toggle="buttons-radio">
-    <!--%= f.radio_button :answer, "yes", id: "first", style: "display:none;" %-->
-    <input id="first" name="inquiry[answer]" style="display:none;" type="radio" value="yes" />
-    <label for="first" class="btn  btn-large">YES</label>
+  <!--div class="btn-group btn-group-lg" data-toggle="buttons-radio">
+    <label for="first" class="btn  btn-default btn-lg">
+      <input id="first" name="inquiry[answer]" type="radio" value="yes" />YES
+    </label>
 
-    <!--%= f.radio_button :answer, "abstention", id: "second",  style: "display:none;" %-->
-    <input id="second" name="inquiry[answer]" style="display:none;" type="radio" value="abstention" />
-    <label for="second" class="btn  btn-large">Abs.</label>
+    <label for="second" class="btn  btn-default btn-lg">
+      <input id="second" name="inquiry[answer]" type="radio" value="abstention" />ABS
+    </label>
 
-    <!--%= f.radio_button :answer, "no", id: "third", style: "display:none;" %-->
-    <input id="third" name="inquiry[answer]" style="display:none;" type="radio" value="no" />
-    <label for="third" class="btn  btn-large">NO</label>
-  </div>
+    <label for="third" class="btn  btn-default btn-lg">
+      <input id="third" name="inquiry[answer]" style="display:none;" type="radio" value="no" />NO
+    </label>
+  </div-->
+
+<!--div class="btn-group input-group" data-toggle="buttons">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div-->
+
+
+<div class="btn-group" data-toggle="buttons">
+  <label for="first" class="btn btn-default btn-lg">
+    <input type="radio" name="inquiry[answer]" id="first" value="yes" > YES
+  </label>
+  <label for="second" class="btn btn-default btn-lg">
+    <input type="radio" name="inquiry[answer]" id="second" value="abstention" > ABS
+  </label>
+  <label for="third" class="btn btn-default btn-lg">
+    <input type="radio" name="inquiry[answer]" id="third" value="no" > NO
+  </label>
+</div>
+
 
 
 <br/><br/>
@@ -33,7 +53,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit 'Vote', class: 'btn btn-large' %>
+    <%= f.submit 'Vote', class: 'btn btn-default btn-lg' %>
   </div>
 
   <div id="error_invisible">

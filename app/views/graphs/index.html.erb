@@ -5,8 +5,8 @@
 
 <table class="table table-bordered">
 	<tr>
-		<td id='tdyes'> Yes votes: <%= @answer_count[:t_answers] %> </td>
-		<td id='tdno'>  No votes : <%= @answer_count[:f_answers] %> </td>
+		<td id='tdyes'> Yes votes:   <%= @answer_count[:t_answers] %> </td>
+		<td id='tdno'>  No votes :   <%= @answer_count[:f_answers] %> </td>
 		<td id='tdabs'> Abstentions: <%= @answer_count[:e_answers] %> </td>
 	</tr>
 	<tr>
@@ -23,18 +23,23 @@
 
 <!--div id="chart2"></div-->
 
-<!--%= link_to 'Edit', edit_question_path(@question), :class => 'btn btn-mini'  %-->
-<%= link_to 'Questions Overview', questions_path,   :class => 'btn'  %>
-<p class="spacer-medium"/>
+<table class="table">
+	<tr>
+	<td width="50%">
+		<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#remarks"> 
+		  Remarks
+		</button>
 
-
-<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#remarks"> 
-  Show Remarks
-</button>
-
-<div id="remarks" class="collapse">
-	<% @remarks.each do |remark| %>
-		<p><%= remark %></p>
-	<% end %>
-</div>
-
+		<div id="remarks" class="collapse">
+			<% @remarks.each do |remark| %>
+				<span class="gugs"><br/><%= remark %></span>
+			<% end %>
+		</div>
+	</td>
+	<td width="50%">
+		<!--%= link_to 'Edit', edit_question_path(@question), :class => 'btn btn-mini'  %-->
+		<%= link_to 'Questions Overview', questions_path,   :class => 'btn btn-default'  %>
+		<!--p class="spacer-medium"/-->
+	</td>
+	</tr>	
+</table>
