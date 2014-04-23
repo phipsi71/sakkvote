@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//  XXX require turbolinks
+//= require turbolinks
 //  XXXX require twitter/bootstrap
 //= require bootstrap.min
 

@@ -2,14 +2,18 @@
 
 <p>
   <span class="decent">Current Question ID: <%= @question.id %></span>
-  <h4 data-id="<%= @question.id %>"><%= @question.poke %></h4>
+  <h4 class="lead" data-id="<%= @question.id %>"><%= @question.poke %></h4>
+  <% if @question.condition %>
+  <p>with the following conditions:</p>
+  <p><%= simple_format(@question.condition) %></p>
+  <% end %>
 </p>
 
 
 <!--% link_to 'Edit', edit_question_path(@question) %-->
 
 <div>
-	<p class="text-info">Users now may answer the question displayed.</p>
+	<p class="text-info">Users now answer the question being displayed.</p>
 </div>
 
 <%= render partial: 'get_nofa', layout: false %>

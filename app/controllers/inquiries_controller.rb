@@ -36,9 +36,16 @@ class InquiriesController < ApplicationController
   def create
 
     @inquiry = Inquiry.new(inquiry_params)
+    if @question.nil?
+      redirect_to '/pages/show', alert: 'Sorry, you\'re too late...'
+      return
+    elsif Inquiry.exists?(session[:current_user_id], @question.id)
+      redirect_to '/pages/show', alert: 'Question already answered. Please wait for the next question to be displayed'
+      return
+    end
     logger.debug "params from POST: #{params[:question_id].to_i}"
     logger.debug "Active Question : #{@question.id}"
-    if params[:question_id].to_i != @question.id
+    if params[:question_id].to_i != @question.id || params[:question_id].to_i == nil
       redirect_to '/pages/show', alert: 'Wrong Question, please reload'
       return
     end

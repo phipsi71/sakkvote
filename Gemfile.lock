@@ -50,13 +50,15 @@ GEM
     lazy_high_charts (1.5.2)
       bundler (>= 1.0)
       hash-deep-merge
-    less (2.5.0)
+    less (2.4.0)
       commonjs (~> 0.2.7)
-    less-rails (2.5.0)
+    less-rails (2.4.2)
       actionpack (>= 3.1)
-      less (~> 2.5.0)
-    less-rails-bootstrap (3.1.1.1)
-      less-rails (~> 2.5.0)
+      less (~> 2.4.0)
+    less-rails-bootstrap (3.1.1.0)
+      less-rails (~> 2.4.2)
+    less-rails-fontawesome (0.8.0)
+      less-rails (~> 2.4.2)
     libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -81,7 +83,7 @@ GEM
       activesupport (= 4.0.2)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.2.2)
+    rake (10.3.1)
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
@@ -130,6 +132,7 @@ DEPENDENCIES
   lazy_high_charts
   less-rails
   less-rails-bootstrap
+  less-rails-fontawesome
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc

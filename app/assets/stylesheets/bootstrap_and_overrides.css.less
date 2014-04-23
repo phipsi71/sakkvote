@@ -1,74 +1,178 @@
-/*
-  = XXX require twitter-bootstrap-static/bootstrap
- 
-  Use Font Awesome icons (default)
-  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
-  = xxx require twitter-bootstrap-static/fontawesome
+//   PATH:   ./.rvm/gems/ruby-2.0.0-p247/gems/less-rails-bootstrap-3.1.1.1/app/frameworks/twitter/bootstrap/variables.less
 
+/*
+@import "twitter/bootstrap/alerts";
+@import "twitter/bootstrap/badges";
+
+@import "twitter/bootstrap/breadcrumbs";
+@import "twitter/bootstrap/button-groups";
+@import "twitter/bootstrap/buttons";
+@import "twitter/bootstrap/carousel";
+@import "twitter/bootstrap/close";
+@import "twitter/bootstrap/code";
+@import "twitter/bootstrap/component-animations";
+@import "twitter/bootstrap/dropdowns";
+@import "twitter/bootstrap/forms";
+@import "twitter/bootstrap/glyphicons";
+@import "twitter/bootstrap/grid";
+@import "twitter/bootstrap/input-groups";
+@import "twitter/bootstrap/jumbotron";
+@import "twitter/bootstrap/labels";
+@import "twitter/bootstrap/list-group";
+@import "twitter/bootstrap/media";
+@import "twitter/bootstrap/mixins";
+@import "twitter/bootstrap/modals";
+@import "twitter/bootstrap/navbar";
+@import "twitter/bootstrap/navs";
+@import "twitter/bootstrap/normalize";
+@import "twitter/bootstrap/pager";
+@import "twitter/bootstrap/pagination";
+@import "twitter/bootstrap/panels";
+@import "twitter/bootstrap/popovers";
+@import "twitter/bootstrap/print";
+@import "twitter/bootstrap/progress-bars";
+@import "twitter/bootstrap/responsive-utilities";
+@import "twitter/bootstrap/scaffolding";
+@import "twitter/bootstrap/tables";
+@import "twitter/bootstrap/theme";
+@import "twitter/bootstrap/thumbnails";
+@import "twitter/bootstrap/tooltip";
+@import "twitter/bootstrap/type";
+@import "twitter/bootstrap/utilities";
+
+@import "twitter/bootstrap/wells";
 */
 
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/variables";
+//@import url(http://fonts.googleapis.com/css?family=Roboto);
 
-.spacer-large {
-    margin-top: 100px; 
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+        url('/assets/glyphicons-halflings-regular.woff') format('woff'), 
+        url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), 
+        url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
-.spacer-medium {
-    margin-top: 60px; 
+@font-family-sans-serif:  'Open Sans', 'sans-serif', Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base: 18px;
+@font-color-base: #222;
+
+.container {
+  padding-top: 3px;
+  background-color: #f5f5f5;
+  font-family: @font-family-sans-serif;
+  font-size: @font-size-base;
+  color: @font-color-base;
 }
 
-.spacer-small {
-    margin-top: 20px; 
-}
+.spacer-large  { margin-top: 100px; }
+.spacer-medium { margin-top: 60px; }
+.spacer-small  { margin-top: 20px; }
 
-
-td.bla {
-	color: blue;
-	font-weight: bold;
-}
-
-
-.btn.active, .btn:active {
-    background-color: #4692cd;
-    color: white;
-}
 
 #error_invisible {
   display: none;
 }
-
 
 .decent {
   color: grey;
 }
 
 
+.alert-error {
+  background-color: @brand-danger;
+  color: white;
+}
+
+
+.alert-success {
+  background-color: @brand-success;
+  color: white;
+}
+/*
+footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+*/
 /*
 .btn {
   background-color: #08c;
   border-color: #08c;
 }
 */
-.btn:hover,
-.btn:focus,
-.btn:active,
-.btn.active {
-  background-color: #0077ff;
+
+/*
+td.bla {
+  color: blue;
+  font-weight: bold;
+}
+*/
+
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: @brand-primary;
+  color: white;
   border-color: #006699;
 }
 /*
-.btn.disabled:hover,
-.btn.disabled:focus,
-.btn.disabled:active,
-.btn.disabled.active,
-.btn[disabled]:hover,
-.btn[disabled]:focus,
-.btn[disabled]:active,
-.btn[disabled].active,
-fieldset[disabled] .btn:hover,
-fieldset[disabled] .btn:focus,
-fieldset[disabled] .btn:active,
-fieldset[disabled] .btn.active {
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
   background-color: #08c;
   border-color: #08c;
 }
 */
+
+
+#tdyes {
+//  background-color: #5a5;
+  background-color: rgba(85, 170, 85, 0.5);
+  font-weight: bold;
+  color: black;
+}
+
+#tdno {
+  background-color: rgba(47, 126, 216, 0.5);
+  font-weight: bold;
+  color: black;
+}
+
+#tdabs {
+  background-color: rgba(119, 119, 119, 0.5);
+  font-weight: bold;
+  color: black;
+}
+
+
+img[alt~="Sakkvote"] { 
+  //border: 1px solid #000;
+  margin-left: 10px;
+} 
+
+
+

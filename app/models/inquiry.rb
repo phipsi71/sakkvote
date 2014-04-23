@@ -4,7 +4,8 @@ class Inquiry < ActiveRecord::Base
 	#validates_presence_of :answer, message: ': Please make a choice'
 	validates_inclusion_of  :answer, :in => ['yes', 'no', 'abstention'],
 		message: ': Please make a choice'
-	validates_uniqueness_of :question_id, :scope => [:session_id], message: 'has already been answered'
+	validates_uniqueness_of :question_id, :scope => [:session_id],
+		message: 'has already been answered'
 
 
 	def self.get_values(active_question_id)
@@ -15,7 +16,8 @@ class Inquiry < ActiveRecord::Base
 		e = Inquiry.where("answer = 'abstention'").where("question_id = ?",  active_question_id).count
 		v = Inquiry.where("answer <> 'abstention'").where("question_id = ?",  active_question_id).count
 		{ total: tot, t_answers: t, f_answers: f, e_answers: e, v_answers: v, 
-			remarks: Inquiry.where("question_id = ?", active_question_id).collect {|r| r.remark} } # this is the return value : a hash ( including the remarks as array )
+			remarks: Inquiry.where("question_id = ? AND remark <> ''", 
+			active_question_id).collect {|r| r.remark} } # this is the return value : a hash ( including the remarks as array )
 	end
 
 	def self.exists?(session_id, active_question_id)

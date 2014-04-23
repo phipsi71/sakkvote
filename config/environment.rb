@@ -6,3 +6,4 @@ Sakkvote::Application.initialize!
 
 Rails.logger = Logger.new('sakkvote.log')
 Rails.logger.level = 0
+

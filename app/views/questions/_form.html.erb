@@ -1,20 +1,39 @@
-<%= form_for @question, :html => { :class => 'form-horizontal' } do |f| %>
-  <div class="control-group">
-    <%= f.label :poke, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :poke, :class => 'text_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :is_active, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :is_active, :class => 'text_field' %>
-    </div>
-  </div>
+<!--
 
-  <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                questions_path, :class => 'btn' %>
-  </div>
+Form Questions
+
+-->
+
+
+<%= form_for @question, html: { class: 'form-horizontal well span9', role: 'form' } do |f| %>
+
+
+<fieldset>
+
+
+    <div class="input-group col-xs-6">
+      <%= f.label :poke %>
+      <%= f.text_field :poke, class: 'form-control' %>
+    </div>
+
+    <!--div class="input-group spacer-small col-xs-6">
+      <%= f.label :is_active %>
+      <%= f.text_field :is_active, class: 'form-control' %>
+    </div-->
+
+    <div class="input-group spacer-small col-xs-6">
+      <%= f.label :condition %>
+      <%= f.text_area :condition, rows: '10', class: 'form-control' %>
+    </div>
+
+
+
+    <div class="form-actions spacer-medium">
+      <%= f.submit nil, :class => 'btn btn-default' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  questions_path, :class => 'btn btn-default' %>
+    </div>
+
+</fieldset>
+
 <% end %>

@@ -5,40 +5,23 @@
 <!--%= f.hidden_field(:question_id, @question_id) %-->
 
 <h4><%= @question.poke %></h4>
-<!--h4>Frage <%= @question.id %>: <%= @question.poke %></h4-->
-<!--%= f.label :answer %-->
-
-
-
-  <!--div class="btn-group btn-group-lg" data-toggle="buttons-radio">
-    <label for="first" class="btn  btn-default btn-lg">
-      <input id="first" name="inquiry[answer]" type="radio" value="yes" />YES
-    </label>
-
-    <label for="second" class="btn  btn-default btn-lg">
-      <input id="second" name="inquiry[answer]" type="radio" value="abstention" />ABS
-    </label>
-
-    <label for="third" class="btn  btn-default btn-lg">
-      <input id="third" name="inquiry[answer]" style="display:none;" type="radio" value="no" />NO
-    </label>
-  </div-->
-
-<!--div class="btn-group input-group" data-toggle="buttons">
-  <button type="button" class="btn btn-default">Left</button>
-  <button type="button" class="btn btn-default">Middle</button>
-  <button type="button" class="btn btn-default">Right</button>
-</div-->
+<p>
+  <% if @question.condition %>
+  <p>with the following conditions:</p>
+  <p><%= simple_format(@question.condition) %></p>
+  <% end %>
+</p>
+  
 
 
 <div class="btn-group" data-toggle="buttons">
-  <label for="first" class="btn btn-default btn-lg">
+  <label for="first" class="btn btn-default btn-lg btn-custom">
     <input type="radio" name="inquiry[answer]" id="first" value="yes" > YES
   </label>
-  <label for="second" class="btn btn-default btn-lg">
+  <label for="second" class="btn btn-default btn-lg btn-custom">
     <input type="radio" name="inquiry[answer]" id="second" value="abstention" > ABS
   </label>
-  <label for="third" class="btn btn-default btn-lg">
+  <label for="third" class="btn btn-default btn-lg btn-custom">
     <input type="radio" name="inquiry[answer]" id="third" value="no" > NO
   </label>
 </div>
@@ -47,14 +30,20 @@
 
 <br/><br/>
 
-  <div class="field">
-    <%= f.label :remark %>
-    <%= f.text_field :remark, class: "input" %>
+  <div class="input-group">
+    <!--%= f.label :remark %-->
+    <%= f.text_field :remark, class: "form-control", placeholder: "Remarks" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit 'Vote', class: 'btn btn-default btn-lg' %>
-  </div>
+  <!--div class="actions spacer-small">
+      <%= f.submit 'Vote', class: 'btn btn-default btn-lg' %>
+  </div-->
+
+
+  <%= button_tag(type: 'submit', class: "btn btn-primary btn-lg spacer-small") do %>
+    <i class="glyphicon glyphicon-ok"></i> Vote
+  <% end %> 
+
 
   <div id="error_invisible">
     <% if @inquiry.errors.any? %>
@@ -67,4 +56,5 @@
 
 <% end %>  <!--   FORM END -->
   
+
 <!--p>Session: <%= session[:current_user_id] %></p-->

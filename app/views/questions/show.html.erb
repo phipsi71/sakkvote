@@ -6,15 +6,15 @@
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:poke) %>:</strong></dt>
   <dd><%= @question.poke %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:is_active) %>:</strong></dt>
-  <dd><%= @question.is_active %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:condition) %>:</strong></dt>
+  <dd><%= @question.condition %></dd>
 </dl>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              questions_path, :class => 'btn'  %>
+              questions_path, :class => 'btn btn-default'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_question_path(@question), :class => 'btn' %>
+              edit_question_path(@question), :class => 'btn btn-default' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
               question_path(@question),
               :method => 'delete',
