@@ -5,8 +5,8 @@
 <table class="table">
   <thead>
     <tr>
-      <!--th><%= model_class.human_attribute_name(:id) %></th-->
-      <th><%= model_class.human_attribute_name(:poke) %></th>
+      <th class="decent"><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name('Question') %></th>
       <th><%= model_class.human_attribute_name(:nof_votes) %></th>
       <!--th><%= model_class.human_attribute_name(:is_active) %></th-->
       <!--th></th-->
@@ -16,7 +16,7 @@
   <tbody>
     <% @questions.each do |question| %>
       <tr>
-        <!--td><%= link_to question.id, question_path(question) %></td-->
+        <td class="decent"><%= question.id %></td>
         <td><%= link_to question.poke, question_path(question)  %></td>
         <td><span class="cell"><%= question.nof_votes %><span></td>
         <!--the following td contains a conditional formatting-->

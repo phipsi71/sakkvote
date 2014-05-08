@@ -1,5 +1,8 @@
 //   PATH:   ./.rvm/gems/ruby-2.0.0-p247/gems/less-rails-bootstrap-3.1.1.1/app/frameworks/twitter/bootstrap/variables.less
 
+//= require twitter/bootstrap
+
+
 /*
 @import "twitter/bootstrap/alerts";
 @import "twitter/bootstrap/badges";
@@ -46,9 +49,6 @@
 @import "twitter/bootstrap/bootstrap";
 @import "twitter/bootstrap/variables";
 //@import url(http://fonts.googleapis.com/css?family=Roboto);
-
-
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 @font-face {
@@ -68,6 +68,12 @@
 @font-size-base: 18px;
 @font-color-base: #222;
 
+// Variables
+@link-color:         darken(@font-color-base,10%);
+@link-color-hover:   lighten(@link-color, 30%);
+@link-color-visited: darken(@link-color, 30%);
+
+
 .container {
   padding-top: 3px;
   background-color: #f5f5f5;
@@ -79,6 +85,24 @@
 .spacer-large  { margin-top: 100px; }
 .spacer-medium { margin-top: 60px; }
 .spacer-small  { margin-top: 20px; }
+
+
+// Usage
+a:not(.btn) {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @link-color-hover;
+    text-decoration: underline;
+  }  
+
+  &:visited {
+    color: @link-color-visited;
+    text-decoration: none;
+  }
+}
+
 
 
 #error_invisible {
@@ -100,26 +124,7 @@
   background-color: @brand-success;
   color: white;
 }
-/*
-footer {
-  position: absolute;
-  bottom: 0;
-  color: white;
-}
-*/
-/*
-.btn {
-  background-color: #08c;
-  border-color: #08c;
-}
-*/
 
-/*
-td.bla {
-  color: blue;
-  font-weight: bold;
-}
-*/
 
 .btn-custom-danger:hover,
 .btn-custom-danger:focus,
@@ -127,7 +132,7 @@ td.bla {
 .btn-custom-danger.active {
   background-color: @brand-danger;
   color: white;
-  border-color: #006699;
+  border-color: none;
 }
 
 
