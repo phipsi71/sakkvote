@@ -15,6 +15,7 @@
               questions_path, :class => 'btn btn-default'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_question_path(@question), :class => 'btn btn-default' %>
+  <%= link_to 'Vote for', activequestion_path(@question), :class => 'btn btn-default' %>              
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
               question_path(@question),
               :method => 'delete',

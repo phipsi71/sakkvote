@@ -3,9 +3,9 @@
 <p>
   <span class="decent">Current Question ID: <%= @question.id %></span>
   <h4 class="lead" data-id="<%= @question.id %>"><%= @question.poke %></h4>
-  <% if @question.condition %>
-  <p>under the following conditions:</p>
-  <p><%= simple_format(@question.condition) %></p>
+  <% if @question.condition != '' && @question.condition %>
+	  <p>under the following conditions:</p>
+	  <p><%= simple_format(@question.condition) %></p>
   <% end %>
 </p>
 
