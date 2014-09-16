@@ -9,8 +9,7 @@ Sakkvote::Application.routes.draw do
   get "questions/:id/_get_nofa",  to: 'questions#_get_nofa',  as: 'nofa'
   # get "questions/:id/get_active", to: 'questions#get_active'
 
-  resources :questions
-
+  resources :questions , :path => "admin"
   resources :inquiries
 
   
