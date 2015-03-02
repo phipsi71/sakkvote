@@ -1,6 +1,6 @@
 
 USER_ID   = "votesakk"
-PASSWORD  = "wasa53"
+PASSWORD  = "lambda$49"
 
 ADMIN_ID	= "voteadmin"
-ADMINPASS	= "effinger"
+ADMINPASS	= "KOP64LUZ"
