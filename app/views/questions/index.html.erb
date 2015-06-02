@@ -36,6 +36,24 @@
   </tbody>
 </table>
 
+
+
+
+
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_question_path,
             :class => 'btn btn-sm btn-primary' %>
+            
+            
+            
+            
+            
+   <%= form_tag ({ :controller => 'questions', :action => 'destroy_all'}) do%>
+ <%= submit_tag 'destroy all', data: { confirm: "are you sure?"}, :class => 'btn btn-sm btn-danger'%>
+<% end %>
+ 
+<%= form_tag ({ :controller => 'inquiries', :action => 'destroy_all'}) do%>
+
+ <%= submit_tag 'Destroy All Votes', data: { confirm: "are you sure?"}, :class => 'btn btn-sm btn-danger'%>
+<% end %>
+ 

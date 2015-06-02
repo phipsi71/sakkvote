@@ -16,7 +16,17 @@ class InquiriesController < ApplicationController
   # GET /inquiries/1.json
   def show
   end
+  
+  def destroy_all
+  @Allinquiries = Inquiry.all
+  @Allinquiries.each do |a|    
+    a.destroy     
+  end
+  Question.update_all({:nof_votes => 0})
 
+  redirect_to questions_path, notice:"Deleted All"
+
+end
   # GET /inquiries/new
   def new
     if @question.nil?

@@ -1,5 +1,5 @@
 class Question < ActiveRecord::Base
-
+  has_many :inquiries, dependent: :destroy
 
 	scope :active, -> {where("is_active = 't'")}
 

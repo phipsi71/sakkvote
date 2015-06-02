@@ -1,6 +1,6 @@
 class Inquiry < ActiveRecord::Base
 
-
+belongs_to :question
 	#validates_presence_of :answer, message: ': Please make a choice'
 	validates_inclusion_of  :answer, :in => ['yes', 'no', 'abstention'],
 		message: ': Please make a choice'

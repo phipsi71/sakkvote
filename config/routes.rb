@@ -12,7 +12,9 @@ Sakkvote::Application.routes.draw do
   resources :questions , :path => "admin"
   resources :inquiries
 
-  
+post "questions/destroy_all"
+post "questions/update_votes"
+post "inquiries/destroy_all"
 
   #get "answers/poke"
   #get "questions/index"
