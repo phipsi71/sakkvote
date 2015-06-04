@@ -18,19 +18,21 @@
     <%= stylesheet_link_tag "application", :media => "all" %>
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
-    <%= favicon_link_tag 'favicon.ico', rel: 'shortcut icon' %>
+    <!--%= favicon_link_tag 'favicon.ico', rel: 'shortcut icon' %-->
   
 
     <div class="container">
       <div class="row">
         
-        <div class="col-sm-9 col-md-9">
+        <div class="col-sm-10 col-md-10">
           <div class="spacer-small row">
             <%= image_tag ('sakkvote.png')  %>
           </div>
           <%= yield %>
         </div>
       </div>
+
+      <div class="col-sm-2 col-md-2"></div>
 
       <footer class="spacer-small small">
         <%= bootstrap_flash %>
