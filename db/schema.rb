@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20140415090850) do
 
   create_table "questions", force: true do |t|
     t.string  "poke"
-    t.boolean "is_active"
+    t.boolean "is_active", default: false
     t.integer "nof_votes"
     t.text    "condition"
   end

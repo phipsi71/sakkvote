@@ -17,16 +17,8 @@ class InquiriesController < ApplicationController
   def show
   end
   
-  def destroy_all
-  @Allinquiries = Inquiry.all
-  @Allinquiries.each do |a|    
-    a.destroy     
-  end
-  Question.update_all({:nof_votes => 0})
 
-  redirect_to questions_path, notice:"Deleted All"
 
-end
   # GET /inquiries/new
   def new
     if @question.nil?
@@ -53,8 +45,6 @@ end
       redirect_to '/pages/show', alert: 'Question already answered. Please wait for the next question to be displayed'
       return
     end
-    logger.debug "params from POST: #{params[:question_id].to_i}"
-    logger.debug "Active Question : #{@question.id}"
     if params[:question_id].to_i != @question.id || params[:question_id].to_i == nil
       redirect_to '/pages/show', alert: 'Wrong Question, please reload'
       return

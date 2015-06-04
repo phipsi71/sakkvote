@@ -28,7 +28,8 @@ belongs_to :question
 		end
 	end
 
-
+  
+  
 
 
 	# This defines a class method :

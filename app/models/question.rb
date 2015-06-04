@@ -15,6 +15,8 @@ class Question < ActiveRecord::Base
 		Inquiry.where("question_id = ?", active_question_id).count
 	end
 
+
+
 	# This defines a class method :
 	# def self.method_name
 	# end

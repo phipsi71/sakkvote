@@ -37,23 +37,29 @@
 </table>
 
 
+<div class="row">
+  <div class="col-md-8">
+
+    <%= link_to t('.new', :default => t("helpers.links.new")),
+                new_question_path,
+                :class => 'btn btn-sm btn-primary' %>
+  </div>     
+
+  <div class="col-md-4">
+            
+    <%= form_tag ({ :controller => 'questions', :action => 'destroy_all_votes'}) do %>
+      <%= submit_tag 'Delete Votes only', data: { confirm: "This will delete all votes.\nAre you sure?"}, :class => 'btn btn-sm btn-danger'%>
+    <% end %>
+
+    <div class="spacer-small"></div>
+
+    <%= form_tag ({ :controller => 'questions', :action => 'destroy_all'}) do %>
+      <%= submit_tag 'Delete Votes and Questions', data: { confirm: "This will delete all questions and votes.\nAre you sure?"}, :class => 'btn btn-sm btn-danger'%>
+    <% end %>
 
 
+     
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_question_path,
-            :class => 'btn btn-sm btn-primary' %>
-            
-            
-            
-            
-            
-   <%= form_tag ({ :controller => 'questions', :action => 'destroy_all'}) do%>
- <%= submit_tag 'destroy all', data: { confirm: "are you sure?"}, :class => 'btn btn-sm btn-danger'%>
-<% end %>
- 
-<%= form_tag ({ :controller => 'inquiries', :action => 'destroy_all'}) do%>
+  </div>
 
- <%= submit_tag 'Destroy All Votes', data: { confirm: "are you sure?"}, :class => 'btn btn-sm btn-danger'%>
-<% end %>
- 
+</div>            

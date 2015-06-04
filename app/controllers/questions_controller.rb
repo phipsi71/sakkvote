@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
 
- before_action :authenticate_admin
+  before_action :authenticate_admin
   before_action :set_question, only: [:show, :edit, :update, :destroy, :set_active]
 
 
@@ -20,15 +20,19 @@ class QuestionsController < ApplicationController
   # GET /questions/1.json
   def show
   end
-def destroy_all
-  @Allquestions = Question.all
-  @Allquestions.each do |a|    
-        a.destroy      
-    end
-    redirect_to questions_path, notice:"Deleted All"
-end
 
 
+  def destroy_all
+    Question.destroy_all
+    redirect_to questions_path, notice:"Deleted all questions and votes"
+  end
+
+
+  def destroy_all_votes
+    Inquiry.destroy_all
+    Question.update_all({:nof_votes => 0})
+    redirect_to questions_path, notice:"Deleted all votes"
+  end
 
   # GET /questions/new
   def new
@@ -123,9 +127,6 @@ end
     def set_question
       @question = Question.find(params[:id])
     end
-
-
-
 
 
     # Never trust parameters from the scary internet, only allow the white list through.
